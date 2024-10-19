@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dụng cụ Phòng PCR</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mô Phỏng Phòng Lab PCR</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="lab-section">
+        <div class="equipment" id="pipette" onclick="showInfo('pipette')">
+            <img src="images/pipette.png" alt="Pipette">
+            <p>Pipette</p>
+        </div>
+        <div class="equipment" id="centrifuge" onclick="showInfo('centrifuge')">
+            <img src="images/centrifuge.png" alt="Centrifuge">
+            <p>Centrifuge</p>
+        </div>
+        <div class="equipment" id="thermalCycler" onclick="showInfo('thermalCycler')">
+            <img src="images/thermal-cycler.png" alt="Thermal Cycler">
+            <p>Thermal Cycler</p>
+        </div>
+    </section>
+
+    <div id="infoBox" class="info-box hidden">
+        <span class="close-btn" onclick="closeInfo()">&times;</span>
+        <h2 id="equipmentName"></h2>
+        <p id="equipmentDescription"></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Phòng PCR | Được phát triển bởi Nhóm 7 Seminar Sinh HCMUS</p>
+    </footer>
+
+    <script src="lab.js"></script>
+</body>
+</html>
