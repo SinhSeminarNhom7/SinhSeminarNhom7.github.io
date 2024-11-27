@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image</title>
+    <style>
+        /* Đặt hình ảnh tự động thay đổi kích thước */
+        img {
+            display: block;
+            max-width: 100%; /* Không vượt quá chiều rộng của container */
+            height: 100%; /* Bảo toàn tỷ lệ ảnh */
+            margin: 0 auto; /* Canh giữa */
+        }
+
+        figure {
+            margin: 0 auto;
+            width: 100%; /* Container chiếm 90% màn hình */
+            max-width: 100%; /* Đặt giới hạn tối đa cho container */
+            text-align: center; /* Canh giữa nội dung */
+        }
+
+        figcaption {
+            font-size: 1em;
+            color: #555;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <a>Ấn vào số ô tròn để hiển thị thông tin (chỉ có số 1 và số 2 có) (still updating)</a>
+    <figure>
+        <img src="pic.jpg" alt="Phòng lab" usemap="#lab">
+        <figcaption>Phòng lab</figcaption>
+        <map name="lab">
+            <!-- Nút 1 -->
+            <area shape="rect" coords="94,94,103,103" href="https://en.wikipedia.org/wiki/One_(disambiguation)" alt="Clickable Area">
+            <!-- Nút 2 -->
+            <area shape="rect" coords="126,69,136,78" href="https://en.wikipedia.org/wiki/One_(disambiguation)" alt="Clickable Area">
+        </map>
+    </figure>
+</body>
+</html>
